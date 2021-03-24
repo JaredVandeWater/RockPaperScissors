@@ -1,0 +1,23 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.my-flip{
+transform: scaleX(-1);
+}
+
+.my-text-shadow{
+    text-shadow: 1px 3px black;
+}
+
+
+
+.bg-primary{
+    background-image: linear-gradient(to right, rgb(44, 218, 241) , rgba(0, 26, 255, 0.418)) !important;
+}

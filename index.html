@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div class="row bg-primary">
+            <div class="col text-white text-center py-2">
+                <h1 class="my-text-shadow">Rock Paper Scissors</h1>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center p-5">
+                <h4>PLAYER</h4>
+            </div>
+
+            <div class="col d-flex justify-content-center p-5">
+                <h4>CPU</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" id="playerGlove" src="./assets/point.png" alt="">
+            </div>
+
+
+
+            <div class="my-flip col">
+                <img class="my=flip img-fluid" id="compGlove" src="./assets/point.png" alt="">
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col d-flex justify-content-center">
+
+                <h4 id="player-chose-text"></h4>
+
+            </div>
+            <div class="col d-flex justify-content-center">
+                <h2 id="result"></h2>
+            </div>
+            <div class="col d-flex justify-content-center ">
+
+                <h4 id="comp-chose-text"></h4>
+
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col d-flex justify-content-around mx-5">
+
+                <button id='rock' onclick="playerChooses('Rock')" type="button" class="btn btn-primary">Rock</button>
+                <button id='paper' onclick="playerChooses('Paper')" type="button" class="btn btn-primary">Paper</button>
+                <button id='scissors' onclick="playerChooses('Scissors')" type="button"
+                    class="btn btn-primary">Scissors</button>
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+    <footer class="container-fluid">
+        <div class="row bg-primary py-3">
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
